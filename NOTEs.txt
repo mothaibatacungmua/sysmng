@@ -10,5 +10,8 @@ http://ec2-52-90-40-208.compute-1.amazonaws.com/
 
 scp -i haodk.pem -r client/build/ ubuntu@ec2-52-90-40-208.compute-1.amazonaws.com:~/sysmng/client/build/
 
-229884451978-eqfmvpjuuk8j9l90qd6tovngmobi7hbe.apps.googleusercontent.com
+229884451978-jlhbp56mqrifit7tqm2qnle4tlqvdv58.apps.googleusercontent.com
+
 9c0vHzVmPmtwG5NTuUBraOv2
+
+MLV7vwvAruOviaKulh5ZGUjI
