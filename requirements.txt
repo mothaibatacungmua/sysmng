@@ -1,0 +1,6 @@
+redis
+pymysql
+flask
+flask-login
+flask-caching
+flask-migrate

@@ -1,0 +1,7 @@
+{
+    "name": "CarManager",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./CarManager.js"
+}
+  

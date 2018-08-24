@@ -1,0 +1,6 @@
+{
+    "name": "EnsureLoggedIn",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./EnsureLoggedIn.js"
+  }

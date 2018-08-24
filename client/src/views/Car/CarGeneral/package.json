@@ -1,0 +1,7 @@
+{
+    "name": "CarGeneral",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./CarGeneral.js"
+  }
+  
