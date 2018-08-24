@@ -18,6 +18,8 @@ class Login extends Component {
       if (!prom) return;
       this.auth.setUser(prom)
       this.props.setLoggedIn()
+    }else{
+      this.props.history.push("/dashboard")
     }
   }
 
