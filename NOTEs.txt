@@ -5,3 +5,7 @@ export FLASK_APP=run.py
 flask db migrate
 flask db upgrade
 
+
+http://ec2-52-90-40-208.compute-1.amazonaws.com/
+
+scp -i haodk.pem -r client/build/ ubuntu@ec2-52-90-40-208.compute-1.amazonaws.com:~/sysmng/client/build/

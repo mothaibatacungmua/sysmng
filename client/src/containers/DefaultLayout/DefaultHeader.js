@@ -30,9 +30,6 @@ class DefaultHeader extends Component {
   }
 
   render() {
-    if(!this.user){
-      return null;
-    }
     // eslint-disable-next-line
     const { children, ...attributes } = this.props;
 

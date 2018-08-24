@@ -5,6 +5,8 @@ import { withRouter } from "react-router";
 import { AuthAPI } from '../../../apis/auth';
 
 
+const window_ = typeof window !== 'undefined' && window
+
 class EnsureLoggedInContainer extends Component {
   constructor(props){
     super(props)
@@ -20,14 +22,16 @@ class EnsureLoggedInContainer extends Component {
       var prom = this.auth.getMe()
       if (!prom) {
         this.props.history.replace("/login")
+      }else{
+        this.auth.setUser(prom)
+        dispatch(doLogin())
       }
-      this.auth.setUser(prom)
-      dispatch(doLogin())
     }
   }
   
   render() {
     if (this.props.isLoggedIn) {
+      console.log('dit nhau', this.props.isLoggedIn)
       return this.props.children
     } else {
       return null
@@ -36,6 +40,7 @@ class EnsureLoggedInContainer extends Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
+  console.log(state)
   return {
     isLoggedIn: state.authReducer.isLoggedIn,
     currentURL: ownProps.location.pathname

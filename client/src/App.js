@@ -38,7 +38,7 @@ class App extends Component {
       window_.location.hash = hash
     } else if (isLoggingOut) {
       // do any kind of cleanup or post-logout redirection here
-      window_.location.hash = "login"
+      window_.location.hash = "/login"
     }
   }
 
