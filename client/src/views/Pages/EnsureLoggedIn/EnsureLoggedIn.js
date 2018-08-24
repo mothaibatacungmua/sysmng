@@ -31,7 +31,6 @@ class EnsureLoggedInContainer extends Component {
   
   render() {
     if (this.props.isLoggedIn) {
-      console.log('dit nhau', this.props.isLoggedIn)
       return this.props.children
     } else {
       return null
